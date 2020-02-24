@@ -1,7 +1,7 @@
 # CrowdChain
 The location preserve anonymous payment system based on permissioned blockchain in CrowdOS
 
-(Hao, Wang, Zhiwen Yu, Yimeng Liu, Bin Guo, Liang Wang, and Helei Cui. "Crowdchain: A Location Preserve Anonymous Payment System Based on Permissioned Blockchain." In 2019 IEEE International Conference on Smart Internet of Things (SmartIoT), pp. 227-233. IEEE, 2019.)[https://ieeexplore.ieee.org/document/8896607/]
+[Hao, Wang, Zhiwen Yu, Yimeng Liu, Bin Guo, Liang Wang, and Helei Cui. "Crowdchain: A Location Preserve Anonymous Payment System Based on Permissioned Blockchain." In 2019 IEEE International Conference on Smart Internet of Things (SmartIoT), pp. 227-233. IEEE, 2019.](https://ieeexplore.ieee.org/document/8896607/)
 
 ## Pay Bonus By Blockchain(for developer)
 
