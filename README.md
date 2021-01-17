@@ -1,7 +1,8 @@
 # CrowdChain
+
 The location preserve anonymous payment system based on permissioned blockchain in CrowdOS
 
-[Hao, Wang, Zhiwen Yu, Yimeng Liu, Bin Guo, Liang Wang, and Helei Cui. "Crowdchain: A Location Preserve Anonymous Payment System Based on Permissioned Blockchain." In 2019 IEEE International Conference on Smart Internet of Things (SmartIoT), pp. 227-233. IEEE, 2019.](https://ieeexplore.ieee.org/document/8896607/)
+Hao, Wang, Zhiwen Yu, Yimeng Liu, Bin Guo, Liang Wang, and Helei Cui. "Crowdchain: A Location Preserve Anonymous Payment System Based on Permissioned Blockchain." In 2019 IEEE International Conference on Smart Internet of Things (SmartIoT), pp. 227-233. IEEE, 2019.
 
 ## Pay Bonus By Blockchain(for developer)
 
@@ -14,12 +15,15 @@ https://aur.archlinux.org/packages/web3j/).
  [more info](https://docs.web3j.io/command_line.html).
 
 #### Windows
+
 Use PlwerShell input the commond.
+
 ```Shell
 $ ./web3j
 ```
 
 To generate a new Ethereum wallet:
+
 ```shell
 $ ./web3j wallet create
 
@@ -31,16 +35,21 @@ Creating directory: keystore ...complete
 ```
 
 To update the password for an existing wallet:
+
 ```shell
 $ ./web3j wallet update <walletfile>
 ```
 
 ### Get Wallet Address
+
 Login [MyEtherWallet](https://www.myetherwallet.com/interface) using your wallet file and passowrd, then you will find your address.
 
 ### Deployment Project
+
 #### Maven
+
 **Java 8**
+
 ```xml
 <dependency>
   <groupId>org.web3j</groupId>
@@ -48,12 +57,15 @@ Login [MyEtherWallet](https://www.myetherwallet.com/interface) using your wallet
   <version>4.3.0</version>
 </dependency>
 ```
+
 #### Gradle
 
 **Java 8**
+
 ```java
 compile ('org.web3j:core:3.4.0')
 ```
+
 The source code in [Github](https://github.com/JackKing-defier/CrowdChain).
 
 ### Signing Infura Service 
@@ -72,14 +84,17 @@ https://rinkeby.infura.io/<your-token>
 https://rinkeby.infura.io/v3/34ada3de9b9e4186b365975ba1843c4f
 
 You can create the client just like the regular HTTPClient:
+
 ```java
 Web3j web3 = Web3j.build(new HttpService("https://rinkeby.infura.io/<your-token>"));
 Web3ClientVersion web3ClientVersion = web3.web3ClientVersion().send();
 System.out.println(web3ClientVersion.getWeb3ClientVersion());
 ```
+
 ### Ethereum Testnets
 
 There are a number of dedicated test networks in Ethereum, which are supported by various clients.
+
 + Rinkeby (Geth only)
 + Kovan (Parity only)
 + Ropsten (Geth and Parity)
@@ -90,6 +105,7 @@ You can request Ether for the Rinkeby testnet via the Rinkeby Crypto Faucet, ava
 
 
 ### Pay Bonus 
+
 I edited three transfer functions with different parameters.
 
 ```java
@@ -98,7 +114,7 @@ String amount = "5";
 String toAddress = 
 "0x338a5b100C94e89FEbd3591F154C885D17453302";
 //app.transfer(amount, toAddress);// 直接使用默认钱包向地址转账
-String pwd = "54188cnm";//钱包密码
+String pwd = "nzlhgnfxl666";//钱包密码
 //钱包文件路径
 String walletPath = "F:/我的坚果云/Master/Code/Blockchain/web3j-4.3.0/web3j-4.3.0/bin/keystore/UTC--2019-07-19T02-18-32.941000000Z--415042fa7b66826a06c6cff4bca2d43b214e50b2.json";
 //app.transfer(amount, pwd, walletPath, toAddress);//指定钱包向用户地址转账
@@ -107,7 +123,9 @@ app.transfer(amount, url, pwd, walletPath, toAddress);
 //特定网络结点，指定钱包向用户地址转账
 
 ```
+
 The example gist of transfer():
+
 ```java
 public void transfer(String amount, String url, String pwd, String walletPath, String toAddress) throws  Exception {    
         Web3j web3j = Web3j.build(new HttpService(url));
@@ -134,6 +152,7 @@ public void transfer(String amount, String url, String pwd, String walletPath, S
 
 
 ### Check the Balance
+
 You can check your balance in [Rinkeby](https://rinkeby.etherscan.io/).
 Just search your wallet address.
 
@@ -149,12 +168,15 @@ https://aur.archlinux.org/packages/web3j/).
  [more info](https://docs.web3j.io/command_line.html).
 
 #### Windows
+
 Use PlwerShell input the commond.
+
 ```Shell
 $ ./web3j
 ```
 
 To generate a new Ethereum wallet:
+
 ```shell
 $ ./web3j wallet create
 
@@ -166,17 +188,21 @@ Creating directory: keystore ...complete
 ```
 
 To update the password for an existing wallet:
+
 ```shell
 $ ./web3j wallet update <walletfile>
 ```
 
 ### Get Wallet Address
+
 Login [MyEtherWallet](https://www.myetherwallet.com/interface) using your wallet file and passowrd, then you will find your address.
 
 ### Get Money 
+
 Commit your wallet address when you upload the task data in CrowdOS.
 
 ### Check the Balance
+
 You can check your balance in [Rinkeby](https://rinkeby.etherscan.io/).
 Just search your wallet address.
 
