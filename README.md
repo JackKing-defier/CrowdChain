@@ -116,7 +116,7 @@ String toAddress =
 //app.transfer(amount, toAddress);// 直接使用默认钱包向地址转账
 String pwd = "nzlhgnfxl666";//钱包密码
 //钱包文件路径
-String walletPath = "F:/我的坚果云/Master/Code/Blockchain/web3j-4.3.0/web3j-4.3.0/bin/keystore/UTC--2019-07-19T02-18-32.941000000Z--415042fa7b66826a06c6cff4bca2d43b214e50b2.json";
+String walletPath = "F:/Master/Code/Blockchain/web3j-4.3.0/web3j-4.3.0/bin/keystore/UTC--2019-07-19T02-18-32.941000000Z--415042fa7b66826a06c6cff4bca2d43b214e50b2.json";
 //app.transfer(amount, pwd, walletPath, toAddress);//指定钱包向用户地址转账
 String url = "https://rinkeby.infura.io/v3/34ada3de9b9e4186b365975ba1843c4f";
 app.transfer(amount, url, pwd, walletPath, toAddress);
